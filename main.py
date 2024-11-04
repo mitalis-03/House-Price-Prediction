@@ -55,7 +55,7 @@ def index():
     sizes = sorted(data['size'].unique())
     zip_codes = sorted(data['zip_code'].unique())
 
-    return render_template('C://Users//MY PC//Desktop//Test Jupyter//House_price_prediction//index.html', bedrooms=bedrooms, bathrooms=bathrooms, sizes=sizes, zip_codes=zip_codes)
+    return render_template('index.html', bedrooms=bedrooms, bathrooms=bathrooms, sizes=sizes, zip_codes=zip_codes)
 
 @app.route('/predict',methods=['POST'])
 def predict():
